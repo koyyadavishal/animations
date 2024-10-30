@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>buttons</title>
+    <style>
+        button{
+            background-color: rgb(240, 233, 233);
+            color: blue;
+            border-radius: 4px;
+            align-self: center;
+            transition: all 2s;
+        }
+        .c1{
+            display: inline-block;
+            margin: 20px;
+        }
+        .a1{
+            background-color: rgb(240, 233, 233);
+            color: blue;
+            border-radius: 4px;
+            margin: 40px;
+            transition: all 3s;
+            align-items: flex-end;
+        }
+        img{
+            height: 400px;
+            width: 300px;
+        }
+        button:hover~img{
+            transform: scale(0.5);
+        }
+        .a1:hover~img{
+            transform: scale(1.5);
+        }
+        .a2{
+            background-color: rgb(240, 233, 233);
+            color: rgb(6, 6, 6);
+            border-radius: 4px;
+            margin: 40px;
+            transition: all 3s;
+            align-items: flex-end;
+        }
+        .a2:hover~img{
+            transform: translatex(600px) ;
+            transition: all 2s;
+        }
+        .a3{
+            background-color: rgb(240, 233, 233);
+            color: rgb(9, 73, 84);
+            border-radius: 4px;
+            margin: 40px;
+            transition: all 3s;
+            align-items: flex-end;
+        }
+        .a3:hover~img{
+            transform: rotate(360deg);
+            transition: all 2s;
+        }
+        .a4{
+            background-color: rgb(240, 233, 233);
+            color: rgb(9, 73, 84);
+            border-radius: 4px;
+            margin: 40px;
+            transition: all 3s;
+        }
+        .a4:hover~img{
+            transform: skew(4deg,9deg);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="c1">
+            <button>scale down</button>
+            <button class="a1">scale up</button>
+            <button class="a2">translate</button>
+            <button class="a3">rotate</button>
+            <button class="a4">skew</button>
+            <img src="413842.jpg" alt="pn">
+        </div>
+    </div>
+</body>
+</html>

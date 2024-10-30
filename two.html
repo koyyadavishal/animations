@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prt</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+    
+    .c2{
+        align-self: flex-end;
+        animation-name: move;
+        animation-duration: 2s;
+        animation-direction: alternate ;
+        animation-iteration-count: infinite;
+        color: orange;
+        font-size: 20px;
+    }
+    .c3{
+        align-self: flex-end;
+        animation-name: move;
+        animation-duration: 2s;
+        animation-delay: 1s;
+        animation-direction: alternate ;
+        animation-iteration-count: infinite;
+        color: orange;
+        font-size: 20px;
+    }
+    .c4{
+        align-self: center;
+        animation-name: move;
+        animation-duration: 2s;
+        animation-delay: 2s;
+        animation-direction: alternate ;
+        animation-iteration-count: infinite;
+        color: orange;
+        font-size: 20px;
+    }
+    .main{
+        display: flex;
+        gap: 5px;
+        justify-content: center;
+    }
+    .main1{
+        background-image: url();
+        display: flex;
+        justify-content: center;
+        margin-top: 20%;
+        gap: 3px;
+    }
+    .cap{
+        color: lightgreen;
+        animation-name: op;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+    }
+    .cap1{
+        color: lightgreen;
+        animation-name: op;
+        animation-duration: 5s;
+        animation-delay: 2s;
+        animation-iteration-count: infinite;
+    }
+    .cap2{
+        color: lightgreen;
+        animation-name: op;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-delay: 3s;
+    }
+
+    @keyframes move{
+        from{
+            transform: translatey(0px);
+        }
+        to{
+            transform: translatey(-50px);
+        }
+    }
+    @keyframes op{
+        from{
+            opacity: 0px;
+        }
+        to{
+            opacity: 100%;
+            transform: scale(0.5);
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="main1">
+        <div class="c2">
+            <i class="fa-sharp-duotone fa-solid fa-circle"></i>
+        </div>
+        <div class="c3">
+            <i class="fa-sharp-duotone fa-solid fa-circle"></i>
+        </div>
+        <div class="c4">
+            <i class="fa-sharp-duotone fa-solid fa-circle"></i>
+        </div>
+    </div>
+    <div class="main">
+
+        <div class="cap">
+            <i class="fa-sharp-duotone fa-solid fa-circle"></i>
+        </div>
+        <div class="cap1">
+            <i class="fa-sharp-duotone fa-solid fa-circle"></i>
+        </div>
+        <div class="cap2">
+            <i class="fa-sharp-duotone fa-solid fa-circle"></i>
+        </div>
+    </div>
+</body>
+</html>
